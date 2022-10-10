@@ -31,6 +31,7 @@ namespace WinFormDolgozoBevitel
         {
             this.lbDolgozok = new System.Windows.Forms.ListBox();
             this.btnBevitelForm = new System.Windows.Forms.Button();
+            this.btnFrissit = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // lbDolgozok
@@ -39,25 +40,37 @@ namespace WinFormDolgozoBevitel
             this.lbDolgozok.FormattingEnabled = true;
             this.lbDolgozok.Location = new System.Drawing.Point(0, 0);
             this.lbDolgozok.Name = "lbDolgozok";
-            this.lbDolgozok.Size = new System.Drawing.Size(165, 257);
+            this.lbDolgozok.Size = new System.Drawing.Size(326, 261);
             this.lbDolgozok.TabIndex = 0;
             // 
             // btnBevitelForm
             // 
             this.btnBevitelForm.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.btnBevitelForm.Location = new System.Drawing.Point(0, 234);
+            this.btnBevitelForm.Location = new System.Drawing.Point(0, 238);
             this.btnBevitelForm.Name = "btnBevitelForm";
-            this.btnBevitelForm.Size = new System.Drawing.Size(165, 23);
+            this.btnBevitelForm.Size = new System.Drawing.Size(326, 23);
             this.btnBevitelForm.TabIndex = 1;
             this.btnBevitelForm.Text = "Bevitel";
             this.btnBevitelForm.UseVisualStyleBackColor = true;
             this.btnBevitelForm.Click += new System.EventHandler(this.btnBevitelForm_Click);
             // 
+            // btnFrissit
+            // 
+            this.btnFrissit.Dock = System.Windows.Forms.DockStyle.Bottom;
+            this.btnFrissit.Location = new System.Drawing.Point(0, 215);
+            this.btnFrissit.Name = "btnFrissit";
+            this.btnFrissit.Size = new System.Drawing.Size(326, 23);
+            this.btnFrissit.TabIndex = 2;
+            this.btnFrissit.Text = "Frissítés";
+            this.btnFrissit.UseVisualStyleBackColor = true;
+            this.btnFrissit.Click += new System.EventHandler(this.btnFrissit_Click);
+            // 
             // MainForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(165, 257);
+            this.ClientSize = new System.Drawing.Size(326, 261);
+            this.Controls.Add(this.btnFrissit);
             this.Controls.Add(this.btnBevitelForm);
             this.Controls.Add(this.lbDolgozok);
             this.Name = "MainForm";
@@ -71,6 +84,7 @@ namespace WinFormDolgozoBevitel
 
         private System.Windows.Forms.ListBox lbDolgozok;
         private System.Windows.Forms.Button btnBevitelForm;
+        private System.Windows.Forms.Button btnFrissit;
     }
 }
 

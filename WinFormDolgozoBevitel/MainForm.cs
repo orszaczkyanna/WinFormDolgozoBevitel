@@ -62,8 +62,9 @@ namespace WinFormDolgozoBevitel
                     lbDolgozok.Items.Add(new Dolgozo(
                         dr.GetInt32("id"),
                         dr.GetString("nev"),
-                        dr.GetString("szuletesiIdo"))
-                    );
+                        //dr.GetString("szuletesiIdo")
+                        dr.GetDateTime("szuletesiIdo").ToString("yyyy. MM. dd.")
+                    ));
                 }
             }
         }
@@ -71,6 +72,11 @@ namespace WinFormDolgozoBevitel
         private void btnBevitelForm_Click(object sender, EventArgs e)
         {
             Program.formBevitel.ShowDialog();
+        }
+
+        private void btnFrissit_Click(object sender, EventArgs e)
+        {
+            DolgozokMegjelenitese();
         }
     }
 }

@@ -25,7 +25,7 @@ namespace WinFormDolgozoBevitel
 
         public override string ToString()
         {
-            return nev;
+            return $"{id} {nev} ({szulIdo})";
         }
 
     }
